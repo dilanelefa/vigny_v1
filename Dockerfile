@@ -23,7 +23,7 @@ COPY . .
 
 # On copie le fichier .env.example pour le renommer en .env
 # Vous pouvez modifier le .env.example pour indiquer la configuration de votre site pour la production
-RUN cp -n .env.example .env
+RUN cp -n .env .env
 
 # Installation et configuration de votre site pour la production
 # https://laravel.com/docs/10.x/deployment#optimizing-configuration-loading
@@ -36,7 +36,7 @@ RUN php artisan config:cache
 RUN php artisan route:cache
 # Optimizing View loading
 RUN php artisan view:cache
-
+RUN php artisan migrate --force
 # Compilation des assets de Breeze (ou de votre site)
 RUN npm install
 RUN npm run build
