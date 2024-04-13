@@ -14,7 +14,7 @@ RUN docker-php-ext-install \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Installation dans votre image de NodeJS
-RUN apk add nodejs npm
+RUN apk add nodejs npm php-sqlite3
 
 ENV WEB_DOCUMENT_ROOT /app/public
 ENV APP_ENV production
