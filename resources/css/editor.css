@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.EasyMDEContainer{
+    @apply text-dark dark:text-slate-400 bg-slate-100 dark:bg-dark/65 border-0;
+}
+
+.CodeMirror{
+    @apply bg-gray-100 text-dark dark:text-white dark:bg-dark border-0;
+}
+
+.editor-preview-full{
+    @apply bg-gray-100 text-dark dark:text-white dark:bg-dark border-0;
+}
+
+.editor-preview pre {
+    @apply text-white  bg-dark;
+}

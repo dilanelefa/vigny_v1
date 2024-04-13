@@ -1,0 +1,33 @@
+
+.content h1,
+.content h2,
+.content h3{
+    @apply font-bold text-3xl my-3;
+}
+
+.content h1::before,
+.content h2::before,
+.content h3::before{
+    content: '#';
+    @apply text-orange-500 font-bold me-2;
+}
+
+.content pre{
+    overflow-x: scroll;
+}
+
+.content pre code{
+    @apply rounded-lg my-2;
+}
+
+.content p{
+    @apply my-1;
+}
+
+.content img{
+    @apply rounded-xl my-2;
+}
+
+.content a{
+    @apply text-orange-500;
+}
